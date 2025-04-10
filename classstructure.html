@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Structure | Excellence Tuition Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #1e40af;
+            border: 4px solid #93c5fd;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 33px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: #93c5fd;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-800 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold">Excellence Tuition</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-yellow-300">Home</a>
+                    <a href="about.html" class="hover:text-yellow-300">About Us</a>
+                    <a href="courses.html" class="hover:text-yellow-300">Courses</a>
+                    <a href="classstructure.html" class="text-yellow-300">Class Structure</a>
+                    <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-700 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Class Structure</h1>
+            <p class="text-xl mb-8">Systematic learning approach for academic excellence</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <!-- Teaching Methodology -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-blue-800">Teaching Methodology</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md border-l-4 border-blue-600">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Conceptual Learning</h3>
+                    <p class="text-gray-700">Emphasis on understanding fundamental concepts rather than rote learning, with real-world applications.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md border-l-4 border-yellow-500">
+                    <div class="text-yellow-500 text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Interactive Classes</h3>
+                    <p class="text-gray-700">Small batch sizes (15-20 students) ensuring individual attention and active participation.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md border-l-4 border-blue-600">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Structured Curriculum</h3>
+                    <p class="text-gray-700">Well-planned syllabus coverage with regular progress tracking and customized learning plans.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weekly Schedule -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-blue-800">Weekly Schedule</h2>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-5 bg-blue-100 text-blue-800 font-semibold">
+                    <div class="p-4 border-b md:border-b-0 md:border-r border-blue-200">Day</div>
+                    <div class="p-4 border-b md:border-b-0 md:border-r border-blue-200">Morning Batch</div>
+                    <div class="p-4 border-b md:border-b-0 md:border-r border-blue-200">Afternoon Batch</div>
+                    <div class="p-4 border-b md:border-b-0 md:border-r border-blue-200">Evening Batch</div>
+                    <div class="p-4">Special Classes</div>
+                </div>
+                <div class="divide-y divide-gray-200">
+                    <!-- Monday -->
+                    <div class="grid grid-cols-1 md:grid-cols-5">
+                        <div class="p-4 font-medium bg-gray-50">Monday</div>
+                        <div class="p-4">7:30 AM - 9:30 AM<br>Physics</div>
+                        <div class="p-4">2:00 PM - 4:00 PM<br>Chemistry</div>
+                        <div class="p-4">5:30 PM - 7:30 PM<br>Mathematics</div>
+                        <div class="p-4 text-sm text-gray-600">-</div>
+                    </div>
+                    <!-- Tuesday -->
+                    <div class="grid grid-cols-1 md:grid-cols-5">
+                        <div class="p-4 font-medium bg-gray-50">Tuesday</div>
+                        <div class="p-4">7:30 AM - 9:30 AM<br>Chemistry</div>
+                        <div class="p-4">2:00 PM - 4:00 PM<br>Biology</div>
+                        <div class="p-4">5:30 PM - 7:30 PM<br>Physics</div>
+                        <div class="p-4 text-sm text-gray-600">-</div>
+                    </div>
+                    <!-- Wednesday -->
+                    <div class="grid grid-cols-1 md:grid-cols-5">
+                        <div class="p-4 font-medium bg-gray-50">Wednesday</div>
+                        <div class="p-4">7:30 AM - 9:30 AM<br>Mathematics</div>
+                        <div class="p-4">2:00 PM - 4:00 PM<br>Physics</div>
+                        <div class="p-4">5:30 PM - 7:30 PM<br>Chemistry</div>
+                        <div class="p-4 text-sm text-gray-600">8:00 PM - 9:00 PM<br>Doubt Clearing</div>
+                    </div>
+                    <!-- Thursday -->
+                    <div class="grid grid-cols-1 md:grid-cols-5">
+                        <div class="p-4 font-medium bg-gray-50">Thursday</div>
+                        <div class="p-4">7:30 AM - 9:30 AM<br>Biology</div>
+                        <div class="p-4">2:00 PM - 4:00 PM<br>Mathematics</div>
+                        <div class="p-4">5:30 PM - 7:30 PM<br>Computer Science</div>
+                        <div class="p-4 text-sm text-gray-600">-</div>
+                    </div>
+                    <!-- Friday -->
+                    <div class="grid grid-cols-1 md:grid-cols-5">
+                        <div class="p-4 font-medium bg-gray-50">Friday</div>
+                        <div class="p-4">7:30 AM - 9:30 AM<br>Revision</div>
+                        <div class="p-4">2:00 PM - 4:00 PM<br>Revision</div>
+                        <div class="p-4">5:30 PM - 7:30 PM<br>Weekly Test</div>
+                        <div class="p-4 text-sm text-gray-600">-</div>
+                    </div>
+                    <!-- Saturday -->
+                    <div class="grid grid-cols-1 md:grid-cols-5">
+                        <div class="p-4 font-medium bg-gray-50">Saturday</div>
+                        <div class="p-4">8:00 AM - 12:00 PM<br>Special Classes</div>
+                        <div class="p-4">1:00 PM - 5:00 PM<br>Special Classes</div>
+                        <div class="p-4">-</div>
+                        <div class="p-4 text-sm">Competitive Exam<br>Preparation</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Timeline -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-blue-800">Academic Year Timeline</h2>
+            <div class="relative pl-16 timeline">
+                <!-- April-June -->
+                <div class="relative mb-12 timeline-item">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-800">April - June</h3>
+                    <p class="text-gray-700 mb-2">Foundation Phase</p>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                        <li>Basic concept building</li>
+                        <li>NCERT/Textbook coverage</li>
+                        <li>Diagnostic tests</li>
+                    </ul>
+                </div>
+                <!-- July-September -->
+                <div class="relative mb-12 timeline-item">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-800">July - September</h3>
+                    <p class="text-gray-700 mb-2">Development Phase</p>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                        <li>Advanced concept teaching</li>
+                        <li>Problem-solving techniques</li>
+                        <li>Monthly tests begin</li>
+                    </ul>
+                </div>
+                <!-- October-December -->
+                <div class="relative mb-12 timeline-item">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-800">October - December</h3>
+                    <p class="text-gray-700 mb-2">Consolidation Phase</p>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                        <li>Revision of entire syllabus</li>
+                        <li>Model exam preparation</li>
+                        <li>Weekly tests intensify</li>
+                    </ul>
+                </div>
+                <!-- January-March -->
+                <div class="relative timeline-item">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-800">January - March</h3>
+                    <p class="text-gray-700 mb-2">Exam Preparation Phase</p>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                        <li>Final revision</li>
+                        <li>Previous year papers</li>
+                        <li>Exam strategy sessions</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assessment System -->
+        <section class="mb-16 bg-blue-50 p-8 rounded-lg">
+            <h2 class="text-3xl font-bold mb-8 text-blue-800">Assessment System</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-800">Weekly Tests</h3>
+                    <p class="text-gray-700 mb-4">Short tests covering recent topics to reinforce learning.</p>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-calendar-week mr-2"></i>
+                        <span>Every Friday</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-800">Monthly Exams</h3>
+                    <p class="text-gray-700 mb-4">Comprehensive tests covering all topics taught that month.</p>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>Last week of each month</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-800">Term Exams</h3>
+                    <p class="text-gray-700 mb-4">Full-length exams simulating board exam conditions.</p>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-calendar-check mr-2"></i>
+                        <span>Quarterly (Sep, Dec, Mar)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Excellence Tuition</h3>
+                    <p>Structured learning programs for academic success.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+                        <li><a href="about.html" class="hover:text-yellow-300">About Us</a></li>
+                        <li><a href="courses.html" class="hover:text-yellow-300">Courses</a></li>
+                        <li><a href="classstructure.html" class="hover:text-yellow-300">Class Structure</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt mr-2"></i> Anchelpetty, Kerala</p>
+                    <p class="mt-2"><i class="fas fa-phone mr-2"></i> +91 9876543210</p>
+                    <p class="mt-2"><i class="fas fa-envelope mr-2"></i> info@excellencetuition.com</p>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Excellence Tuition Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919876543210" class="fixed bottom-6 right-6 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition duration-300">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
