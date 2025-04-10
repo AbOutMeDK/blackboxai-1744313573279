@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | Excellence Tuition Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-800 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold">Excellence Tuition</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-yellow-300">Home</a>
+                    <a href="about.html" class="hover:text-yellow-300">About Us</a>
+                    <a href="courses.html" class="text-yellow-300">Courses</a>
+                    <a href="classstructure.html" class="hover:text-yellow-300">Class Structure</a>
+                    <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-700 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Courses</h1>
+            <p class="text-xl mb-8">Comprehensive academic programs for +1 and +2 students</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <!-- Course Categories -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-blue-800">Course Categories</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md border-l-4 border-blue-600">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-800">Kerala State Syllabus</h3>
+                    <p class="text-gray-700 mb-6">Specialized coaching for students following the Kerala State Board curriculum, covering all core subjects with emphasis on board exam preparation.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Physics</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Chemistry</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Mathematics</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Biology (Botany & Zoology)</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md border-l-4 border-yellow-500">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-800">CBSE Syllabus</h3>
+                    <p class="text-gray-700 mb-6">Comprehensive program for CBSE students with NCERT-based teaching and additional reference materials for competitive exam preparation.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Physics</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Chemistry</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Mathematics</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Biology</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Computer Science</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Courses -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-blue-800">Detailed Course Offerings</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Physics -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="bg-blue-600 p-4 text-white">
+                        <h3 class="text-xl font-semibold">Physics</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Comprehensive coverage of theory, numerical problems, and practical applications with special focus on board exam patterns.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium text-blue-600">+1 & +2 Levels</span>
+                            <span class="text-sm font-medium text-gray-600">Both Syllabi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chemistry -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="bg-blue-600 p-4 text-white">
+                        <h3 class="text-xl font-semibold">Chemistry</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Conceptual teaching with emphasis on organic chemistry mechanisms, numerical problems, and practical chemistry.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium text-blue-600">+1 & +2 Levels</span>
+                            <span class="text-sm font-medium text-gray-600">Both Syllabi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mathematics -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="bg-blue-600 p-4 text-white">
+                        <h3 class="text-xl font-semibold">Mathematics</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Problem-solving approach with extensive practice sessions covering all chapters and competitive exam preparation.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium text-blue-600">+1 & +2 Levels</span>
+                            <span class="text-sm font-medium text-gray-600">Both Syllabi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Biology -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="bg-blue-600 p-4 text-white">
+                        <h3 class="text-xl font-semibold">Biology</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Detailed coverage of Botany and Zoology with diagram-based learning and memory techniques for complex concepts.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium text-blue-600">+1 & +2 Levels</span>
+                            <span class="text-sm font-medium text-gray-600">State Syllabus</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Computer Science -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="bg-blue-600 p-4 text-white">
+                        <h3 class="text-xl font-semibold">Computer Science</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Practical programming skills along with theoretical concepts, with hands-on coding sessions and project work.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium text-blue-600">+1 & +2 Levels</span>
+                            <span class="text-sm font-medium text-gray-600">CBSE Syllabus</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Crash Course -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="bg-yellow-500 p-4 text-blue-900">
+                        <h3 class="text-xl font-semibold">Exam Crash Course</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Intensive revision program covering important questions, model papers, and last-minute preparation strategies.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium text-blue-600">+2 Students</span>
+                            <span class="text-sm font-medium text-gray-600">All Subjects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Features -->
+        <section class="mb-16 bg-blue-50 p-8 rounded-lg">
+            <h2 class="text-3xl font-bold mb-8 text-blue-800">Course Features</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="flex items-start">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-book text-blue-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-blue-800">Comprehensive Study Materials</h3>
+                        <p class="text-gray-700">Detailed notes, question banks, and solved papers provided for all subjects.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-chart-line text-blue-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-blue-800">Regular Assessments</h3>
+                        <p class="text-gray-700">Weekly tests and monthly exams to track progress and identify improvement areas.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-user-friends text-blue-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-blue-800">Doubt Clearing Sessions</h3>
+                        <p class="text-gray-700">Special sessions dedicated to resolving individual student queries.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Excellence Tuition</h3>
+                    <p>Quality education for +1 and +2 students in Kerala & CBSE syllabi.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+                        <li><a href="about.html" class="hover:text-yellow-300">About Us</a></li>
+                        <li><a href="courses.html" class="hover:text-yellow-300">Courses</a></li>
+                        <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt mr-2"></i> Anchelpetty, Kerala</p>
+                    <p class="mt-2"><i class="fas fa-phone mr-2"></i> +91 9876543210</p>
+                    <p class="mt-2"><i class="fas fa-envelope mr-2"></i> info@excellencetuition.com</p>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Excellence Tuition Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919876543210" class="fixed bottom-6 right-6 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition duration-300">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
