@@ -1,0 +1,165 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excellence Tuition Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#F7E7CE]/5">
+    <!-- Navigation -->
+    <nav class="bg-blue-800 text-white shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold">
+                    Excellence Tuition
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-yellow-300">Home</a>
+                    <a href="about.html" class="hover:text-yellow-300 transition-colors">About Us</a>
+                    <a href="courses.html" class="hover:text-yellow-300 transition-colors">Courses</a>
+                    <a href="classstructure.html" class="hover:text-yellow-300 transition-colors">Class Structure</a>
+                    <a href="contact.html" class="hover:text-yellow-300 transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none" id="menuButton">
+                    <i class="fas fa-bars text-2xl text-[#0F52BA]"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobileMenu">
+                <div class="flex flex-col space-y-4 mt-4 border-t border-[#0F52BA]/20 pt-4">
+                    <a href="index.html" class="text-[#0F52BA]">Home</a>
+                    <a href="about.html" class="hover:text-[#0F52BA] transition-colors">About Us</a>
+                    <a href="courses.html" class="hover:text-[#0F52BA] transition-colors">Courses</a>
+                    <a href="classstructure.html" class="hover:text-[#0F52BA] transition-colors">Class Structure</a>
+                    <a href="contact.html" class="btn btn-primary bg-[#0F52BA] text-[#F7E7CE] text-center py-2 rounded-full hover:bg-[#0A3A8C] transition-all">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Spacer for fixed nav -->
+    <div class="h-20"></div>
+
+    <!-- Hero Section -->
+    <section class="hero bg-blue-700 text-white py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxwYXR0ZXJuIGlkPSJncmlkIiB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNMjggNjZMMCA1MEwyOCAzNGwyOCAxNkwyOCA2NnpNMjggMzRMMCA1MGwyOCAxNiAyOC0xNkwyOCAzNHoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0Y3RTdDRSIgc3Ryb2tlLW9wYWNpdHk9IjAuMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-10"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="slide-up">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">Welcome to Excellence Tuition Center</h1>
+                <p class="text-xl md:text-2xl mb-10 text-[#F7E7CE]/90">Quality education for +1 and +2 students in Kerala & CBSE syllabi</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 items-center">
+                    <a href="contact.html" class="btn bg-blue-800 text-white px-8 py-3 rounded-lg hover:bg-blue-900 transition-all shadow-md flex items-center">
+                        Contact Us
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="courses.html" class="btn bg-white text-blue-800 px-8 py-3 rounded-lg hover:bg-gray-100 transition-all shadow-md flex items-center">
+                        View Courses
+                        <i class="fas fa-book-open ml-2"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <!-- About Section -->
+        <section class="mb-16 fade-in">
+            <h2 class="text-3xl font-bold mb-8 text-[#0F52BA]">About Our Center</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <p class="mb-4 text-gray-700">Excellence Tuition Center provides specialized coaching for +1 and +2 students, focusing on both Kerala State and CBSE syllabi. Our mission is to deliver quality education through innovative teaching methods.</p>
+                    <p class="text-gray-700">Founded by Vishnu B.S, an experienced educator, we have helped hundreds of students achieve academic excellence since our establishment.</p>
+                </div>
+                <div class="bg-[#F7E7CE] p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-3 text-[#0F52BA]">Subjects Offered</h3>
+                    <ul class="grid grid-cols-2 gap-2">
+                        <li class="flex items-center"><i class="fas fa-check text-[#0F52BA] mr-2"></i> Physics</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#0F52BA] mr-2"></i> Chemistry</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#0F52BA] mr-2"></i> Botany</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#0F52BA] mr-2"></i> Zoology</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#0F52BA] mr-2"></i> Mathematics</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#0F52BA] mr-2"></i> Computer Science</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founder Section -->
+        <section class="mb-16 bg-gradient-to-br from-[#F7E7CE] to-white p-8 rounded-2xl shadow-lg scale-in">
+            <h2 class="text-3xl font-bold mb-8 text-[#0F52BA]">Our Founder</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/3 mb-6 md:mb-0 md:mr-8">
+                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="Vishnu B.S" class="w-full rounded-lg shadow-md">
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-semibold mb-2">Vishnu B.S</h3>
+                    <p class="text-gray-700 mb-4">With over 15 years of teaching experience, Vishnu B.S has dedicated his career to helping students excel in science subjects. His innovative teaching methods and personalized approach have transformed the learning experience for countless students.</p>
+                    <p class="text-gray-700">"Education is not just about passing exams, but about understanding concepts that will serve students throughout their lives."</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Excellence Tuition</h3>
+                    <p>Quality education for +1 and +2 students in Kerala & CBSE syllabi.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-[#F7E7CE]/80 transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-[#F7E7CE]/80 transition-colors">About Us</a></li>
+                        <li><a href="courses.html" class="hover:text-[#F7E7CE]/80 transition-colors">Courses</a></li>
+                        <li><a href="contact.html" class="hover:text-[#F7E7CE]/80 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt mr-2"></i> Anchelpetty, Kerala</p>
+                    <p class="mt-2"><i class="fas fa-phone mr-2"></i> +91 9876543210</p>
+                    <p class="mt-2"><i class="fas fa-envelope mr-2"></i> info@excellencetuition.com</p>
+                </div>
+            </div>
+            <div class="border-t border-[#F7E7CE]/20 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Excellence Tuition Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919876543210" class="fixed bottom-6 right-6 bg-[#0F52BA] text-[#F7E7CE] p-3 rounded-full shadow-lg hover:bg-[#0A3A8C] transition duration-300">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
